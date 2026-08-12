@@ -1,0 +1,6 @@
+{
+  "name": "DELAQUA Beauty Salon",
+  "description": "DELAQUA Beauty Salon & Spa by Asma - Premium beauty, hair, skin, nails, waxing, bridal makeup, facials and spa services in People's Colony No. 1, Faisalabad, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
