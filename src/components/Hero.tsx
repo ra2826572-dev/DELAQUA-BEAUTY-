@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Calendar, ChevronDown, Star, ShieldCheck, MapPin } from 'lucide-react';
 import { BRAND_INFO } from '../data/salonData';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface HeroProps {
   onBookClick: (serviceName?: string) => void;
@@ -12,10 +13,11 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
       {/* Background Image with Dark & Rose Glow Gradients */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/delaqua_boutique_facade_1786532043184.jpg"
+          src={getImageUrl("/images/delaqua_boutique_facade_1786532043184.jpg")}
           alt="DELAQUA Beauty Salon Exterior"
           className="w-full h-full object-cover object-center scale-105 opacity-40 animate-pulse-subtle"
           referrerPolicy="no-referrer"
+          onError={handleImageError}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/60" />
         <div className="absolute inset-0 bg-radial-at-c from-rose-950/30 via-transparent to-zinc-950/90" />

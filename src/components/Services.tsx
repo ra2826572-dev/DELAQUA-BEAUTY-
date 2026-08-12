@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SERVICES_LIST } from '../data/salonData';
 import { Sparkles, Search, ArrowRight, Tag, Scissors, Sparkle, Heart, Eye } from 'lucide-react';
 import { ServiceItem } from '../types';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface ServicesProps {
   onBookClick: (serviceName?: string) => void;
@@ -100,10 +101,11 @@ export const Services: React.FC<ServicesProps> = ({ onBookClick }) => {
                 {/* Service Image Container */}
                 <div className="relative h-48 sm:h-52 overflow-hidden bg-zinc-900">
                   <img
-                    src={service.image}
+                    src={getImageUrl(service.image)}
                     alt={service.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
+                    onError={handleImageError}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
 

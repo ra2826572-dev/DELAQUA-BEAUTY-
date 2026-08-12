@@ -26,7 +26,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Custom cut by senior stylists tailored to your face structure and hair texture.',
     startingPrice: 'Rs. 2,000',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_hair_cut_salon_1786540111847.jpg'
   },
   {
     id: 'h2',
@@ -34,7 +34,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'hair',
     description: 'Voluminous blowouts, beachy waves, or sleek straight hair finish.',
     startingPrice: 'Rs. 1,200',
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_hair_dye_deal_1786539058569.jpg'
   },
   {
     id: 'h3',
@@ -43,7 +43,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Rich, even color with gloss finish and grey coverage using international hair dye.',
     startingPrice: 'Rs. 6,500',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_hair_dye_deal_1786539058569.jpg'
   },
   {
     id: 'h4',
@@ -52,7 +52,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Deep protein reconstruction for silky frizz-free hair lasting up to 6 months.',
     startingPrice: 'Rs. 10,000',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_keratin_deal_1786539073271.jpg'
   },
   {
     id: 'h5',
@@ -60,7 +60,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'hair',
     description: 'Deep conditioning spa treatment for damaged, dry or color-treated hair.',
     startingPrice: 'Rs. 3,500',
-    image: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_hero_bg_1786530804219.jpg'
   },
 
   // SKIN & FACIAL
@@ -80,7 +80,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Luxury gold serum treatment for radiant skin glow, anti-aging and skin brightening.',
     startingPrice: 'Rs. 5,000',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_gold_facial_spa_1786540132815.jpg'
   },
   {
     id: 's3',
@@ -96,7 +96,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'skin',
     description: 'Organic fruit extracts cleansing, polish, scrub and massage for instant radiance.',
     startingPrice: 'Rs. 2,500',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_gold_facial_spa_1786540132815.jpg'
   },
   {
     id: 's5',
@@ -104,7 +104,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'skin',
     description: 'Brightening skin polish with relaxing face, head and shoulder pressure point massage.',
     startingPrice: 'Rs. 3,000',
-    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_facial_spa_1786530831961.jpg'
   },
 
   // NAILS
@@ -115,7 +115,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Exfoliating diamond glow scrub, cuticle treatment, polish & relaxing hand/foot massage.',
     startingPrice: 'Rs. 2,500',
     popular: true,
-    image: '/images/delaqua_red_mani_pedi_1786532412850.jpg'
+    image: '/images/delaqua_french_mani_pedi_1786540155032.jpg'
   },
   {
     id: 'n2',
@@ -123,7 +123,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'nails',
     description: 'Classic clean French tips with nourishing soak and cuticle care.',
     startingPrice: 'Rs. 2,200',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_french_mani_pedi_1786540155032.jpg'
   },
   {
     id: 'n3',
@@ -131,7 +131,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'nails',
     description: 'Nail shaping, acrylic/gel extensions, custom nail art, and gel polish.',
     startingPrice: 'Rs. 3,000',
-    image: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_nail_bar_1786530847103.jpg'
   },
 
   // WAXING
@@ -141,7 +141,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'waxing',
     description: 'Hygienic gentle wax treatment leaving skin smooth and hair-free.',
     startingPrice: 'Rs. 1,400',
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   },
   {
     id: 'w2',
@@ -149,7 +149,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'waxing',
     description: 'Smooth precision hair removal with soothing post-wax soothing gel.',
     startingPrice: 'Rs. 1,800',
-    image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   },
   {
     id: 'w3',
@@ -158,7 +158,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Comprehensive full arms, full legs, underarms and body wax package.',
     startingPrice: 'Rs. 2,500',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   },
 
   // MAKEUP
@@ -178,7 +178,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Flawless hd party glam, soft contour, eye makeup, and hairstyle of choice.',
     startingPrice: 'Rs. 12,000',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_party_glam_makeup_1786540174347.jpg'
   },
   {
     id: 'm3',
@@ -186,7 +186,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'makeup',
     description: 'Custom HD bridal or bridesmaid makeup customized to match outfit tones.',
     startingPrice: 'Rs. 15,000',
-    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_bridal_makeup_1786539106061.jpg'
   }
 ];
 
@@ -219,7 +219,7 @@ export const SKIN_CARE_DEALS: DealItem[] = [
       'Fruit Mask',
       'Manicure + Pedicure'
     ],
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_gold_facial_spa_1786540132815.jpg'
   },
   {
     id: 'sd2',
@@ -238,7 +238,7 @@ export const SKIN_CARE_DEALS: DealItem[] = [
       'Whitening Manicure',
       'Whitening Pedicure'
     ],
-    image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_facial_spa_1786530831961.jpg'
   }
 ];
 
@@ -249,7 +249,7 @@ export const FACIAL_PACKAGES: FacialPackage[] = [
     price: 'Rs. 5,000/-',
     badge: 'Royal Radiance',
     description: 'Gold-infused brightening treatment designed to give instant luminous, youthful glow.',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800',
+    image: '/images/delaqua_gold_facial_spa_1786540132815.jpg',
     features: [
       '24K Gold Whitening Polisher',
       '24K Gold Scrubbing Toning',
@@ -309,7 +309,7 @@ export const WAX_DEALS: DealItem[] = [
       'Half Legs Wax',
       'Soothing Aloe Vera Post Gel'
     ],
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   },
   {
     id: 'wd2',
@@ -322,7 +322,7 @@ export const WAX_DEALS: DealItem[] = [
       'Under Legs Wax',
       'Skin Brightening Scrub Finish'
     ],
-    image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   },
   {
     id: 'wd3',
@@ -337,7 +337,7 @@ export const WAX_DEALS: DealItem[] = [
       'Under Arms Wax',
       'Hydrating Skin Polish Finish'
     ],
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_waxing_deal_1786539087544.jpg'
   }
 ];
 
@@ -374,7 +374,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g5',
     title: 'Hair Styling & Color Stations',
     category: 'hair',
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800',
+    image: '/images/delaqua_hair_cut_salon_1786540111847.jpg',
     description: 'Spacious hair styling mirrors with professional ring lights.'
   },
   {

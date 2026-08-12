@@ -1,6 +1,7 @@
 import React from 'react';
 import { WAX_DEALS } from '../data/salonData';
 import { Sparkles, Calendar, Check } from 'lucide-react';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface WaxDealsProps {
   onBookClick: (dealName?: string) => void;
@@ -33,10 +34,11 @@ export const WaxDeals: React.FC<WaxDealsProps> = ({ onBookClick }) => {
             >
               <div className="relative h-40 overflow-hidden">
                 <img
-                  src={deal.image || "/images/delaqua_waxing_deal_1786539087544.jpg"}
+                  src={getImageUrl(deal.image || "/images/delaqua_waxing_deal_1786539087544.jpg")}
                   alt={deal.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/30 to-transparent" />
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">

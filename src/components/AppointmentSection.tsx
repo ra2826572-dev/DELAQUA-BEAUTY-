@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, MessageCircle, Calendar, Sparkles } from 'lucide-react';
 import { BRAND_INFO } from '../data/salonData';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface AppointmentSectionProps {
   onBookClick: () => void;
@@ -12,10 +13,11 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ onBookCl
       {/* Ambient Image Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/delaqua_boutique_facade_1786532043184.jpg"
+          src={getImageUrl("/images/delaqua_boutique_facade_1786532043184.jpg")}
           alt="DELAQUA Salon Ambience"
           className="w-full h-full object-cover object-center opacity-20 scale-105"
           referrerPolicy="no-referrer"
+          onError={handleImageError}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950" />
         <div className="absolute inset-0 bg-radial-at-c from-rose-950/40 via-transparent to-zinc-950/80" />

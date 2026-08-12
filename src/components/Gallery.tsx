@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GALLERY_ITEMS } from '../data/salonData';
 import { Sparkles, Eye, X, Calendar, Camera } from 'lucide-react';
 import { GalleryItem } from '../types';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface GalleryProps {
   onBookClick: (serviceName?: string) => void;
@@ -69,10 +70,11 @@ export const Gallery: React.FC<GalleryProps> = ({ onBookClick }) => {
             >
               <div className="h-64 sm:h-72 overflow-hidden">
                 <img
-                  src={item.image}
+                  src={getImageUrl(item.image)}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
               </div>
 
@@ -122,10 +124,11 @@ export const Gallery: React.FC<GalleryProps> = ({ onBookClick }) => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-0">
               <div className="md:col-span-8 h-80 sm:h-96 md:h-[450px] bg-black">
                 <img
-                  src={selectedImage.image}
+                  src={getImageUrl(selectedImage.image)}
                   alt={selectedImage.title}
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
               </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Check, Scissors, Gift, Calendar, ArrowRight } from 'lucide-react';
 import { HAIR_DYE_OPTIONS, KERATIN_OPTIONS, SKIN_CARE_DEALS } from '../data/salonData';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface FeaturedDealsProps {
   onBookClick: (dealName?: string) => void;
@@ -59,10 +60,11 @@ export const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ onBookClick }) => 
             <div className="rounded-2xl overflow-hidden bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between group">
               <div className="relative h-44 sm:h-48 overflow-hidden">
                 <img
-                  src="/images/delaqua_hair_dye_deal_1786539058569.jpg"
+                  src={getImageUrl("/images/delaqua_hair_dye_deal_1786539058569.jpg")}
                   alt="Single Process Hair Dye"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
@@ -159,10 +161,11 @@ export const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ onBookClick }) => 
             <div className="rounded-2xl overflow-hidden bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between group">
               <div className="relative h-44 sm:h-48 overflow-hidden">
                 <img
-                  src="/images/delaqua_keratin_deal_1786539073271.jpg"
+                  src={getImageUrl("/images/delaqua_keratin_deal_1786539073271.jpg")}
                   alt="Keratin Treatment"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Users, Sparkles, HeartHandshake, CheckCircle2, MapPin, Award } from 'lucide-react';
 import { BRAND_INFO, WHY_CHOOSE_US } from '../data/salonData';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 export const About: React.FC = () => {
   const featureCards = [
@@ -33,10 +34,11 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 space-y-4">
             <div className="relative rounded-2xl overflow-hidden border border-rose-900/40 shadow-2xl group">
               <img
-                src="/images/delaqua_boutique_facade_1786532043184.jpg"
+                src={getImageUrl("/images/delaqua_boutique_facade_1786532043184.jpg")}
                 alt="DELAQUA Boutique Salon Exterior"
                 className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
+                onError={handleImageError}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-zinc-950/90 backdrop-blur-md border border-rose-500/30 flex items-center justify-between shadow-2xl">
@@ -58,30 +60,33 @@ export const About: React.FC = () => {
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/images/delaqua_asma_storefront_1786532062793.jpg"
+                  src={getImageUrl("/images/delaqua_asma_storefront_1786532062793.jpg")}
                   alt="DELAQUA BY ASMA Salon & Spa"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-zinc-950/40 group-hover:bg-transparent transition-colors" />
                 <span className="absolute bottom-1.5 left-2 text-[10px] bg-zinc-950/80 text-rose-300 px-1.5 py-0.5 rounded border border-rose-900/50">Facade Night View</span>
               </div>
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/images/delaqua_nail_bar_1786530847103.jpg"
+                  src={getImageUrl("/images/delaqua_nail_bar_1786530847103.jpg")}
                   alt="DELAQUA Nail Bar"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-zinc-950/40 group-hover:bg-transparent transition-colors" />
                 <span className="absolute bottom-1.5 left-2 text-[10px] bg-zinc-950/80 text-rose-300 px-1.5 py-0.5 rounded border border-rose-900/50">Luxury Nail Bar</span>
               </div>
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/images/delaqua_facial_spa_1786530831961.jpg"
+                  src={getImageUrl("/images/delaqua_facial_spa_1786530831961.jpg")}
                   alt="DELAQUA Facial Spa Room"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-zinc-950/40 group-hover:bg-transparent transition-colors" />
                 <span className="absolute bottom-1.5 left-2 text-[10px] bg-zinc-950/80 text-rose-300 px-1.5 py-0.5 rounded border border-rose-900/50">Facial Spa Room</span>

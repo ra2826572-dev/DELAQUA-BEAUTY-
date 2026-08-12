@@ -1,6 +1,7 @@
 import React from 'react';
 import { FACIAL_PACKAGES } from '../data/salonData';
 import { Sparkles, CheckCircle2, ShieldCheck, Calendar, ArrowRight } from 'lucide-react';
+import { getImageUrl, handleImageError } from '../utils/imageUtils';
 
 interface FacialPackagesProps {
   onBookClick: (packageName?: string) => void;
@@ -45,10 +46,11 @@ export const FacialPackages: React.FC<FacialPackagesProps> = ({ onBookClick }) =
               {/* Package Image Banner */}
               <div className="relative h-44 overflow-hidden bg-zinc-900">
                 <img
-                  src={pkg.image}
+                  src={getImageUrl(pkg.image)}
                   alt={pkg.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
                 <span className="absolute bottom-3 left-3 bg-rose-950/90 text-rose-300 text-xs font-semibold px-3 py-1 rounded-full border border-rose-800/50">
