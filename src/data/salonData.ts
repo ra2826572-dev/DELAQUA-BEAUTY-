@@ -71,7 +71,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Multi-step clinical facial with exfoliation, LED therapy, galvanic infusion & deep hydration.',
     startingPrice: 'Rs. 8,000',
     popular: true,
-    image: '/src/assets/images/delaqua_facial_spa_1786530831961.jpg'
+    image: '/images/delaqua_facial_spa_1786530831961.jpg'
   },
   {
     id: 's2',
@@ -88,7 +88,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     category: 'skin',
     description: 'Premium French marine algae treatment for deep skin renewal, protection & hydration.',
     startingPrice: 'Rs. 12,000',
-    image: '/src/assets/images/delaqua_thalgo_clean_facade_1786537017109.jpg'
+    image: '/images/delaqua_thalgo_clean_facade_1786537017109.jpg'
   },
   {
     id: 's4',
@@ -115,7 +115,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Exfoliating diamond glow scrub, cuticle treatment, polish & relaxing hand/foot massage.',
     startingPrice: 'Rs. 2,500',
     popular: true,
-    image: '/src/assets/images/delaqua_nail_bar_1786530847103.jpg'
+    image: '/images/delaqua_red_mani_pedi_1786532412850.jpg'
   },
   {
     id: 'n2',
@@ -169,7 +169,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     description: 'Exquisite signature bridal transformation by Asma including hair style, jewelry setting, dupattta setting & lashes.',
     startingPrice: 'Rs. 35,000',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800'
+    image: '/images/delaqua_bridal_makeup_1786539106061.jpg'
   },
   {
     id: 'm2',
@@ -267,7 +267,7 @@ export const FACIAL_PACKAGES: FacialPackage[] = [
     badge: 'Most Popular',
     popular: true,
     description: 'Advanced multi-technology clinical deep pore cleansing, hydration infusion and LED therapy.',
-    image: '/src/assets/images/delaqua_facial_spa_1786530831961.jpg',
+    image: '/images/delaqua_facial_spa_1786530831961.jpg',
     features: [
       'Deep Cleansing & Polisher',
       'Exfoliation + Tool Extraction',
@@ -285,7 +285,7 @@ export const FACIAL_PACKAGES: FacialPackage[] = [
     price: 'Rs. 12,000/-',
     badge: 'Ultimate Luxury',
     description: 'Premium French sea algae technology for deep cellular skin renewal and environmental barrier protection.',
-    image: '/src/assets/images/delaqua_thalgo_clean_facade_1786537017109.jpg',
+    image: '/images/delaqua_thalgo_clean_facade_1786537017109.jpg',
     features: [
       'Face Polisher & Double Scrub',
       'Precision Scrapper Tool Cleaning',
@@ -346,28 +346,28 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g1',
     title: 'Delaqua Boutique Exterior',
     category: 'exterior',
-    image: '/src/assets/images/delaqua_boutique_facade_1786532043184.jpg',
+    image: '/images/delaqua_boutique_facade_1786532043184.jpg',
     description: 'Sleek black boutique facade & grand entryway at 50-A Nizami Street, People’s Colony No. 1, Faisalabad.'
   },
   {
     id: 'g2',
     title: 'Delaqua By Asma Night Storefront',
     category: 'exterior',
-    image: '/src/assets/images/delaqua_asma_storefront_1786532062793.jpg',
+    image: '/images/delaqua_asma_storefront_1786532062793.jpg',
     description: 'Delaqua by Asma Salon & Spa for Women illuminated storefront facade view.'
   },
   {
     id: 'g3',
     title: 'Nail Bar & Pedicure Station',
     category: 'nailbar',
-    image: '/src/assets/images/delaqua_nail_bar_1786530847103.jpg',
+    image: '/images/delaqua_nail_bar_1786530847103.jpg',
     description: 'Chic nail station with custom marble countertops and brass spa tubs.'
   },
   {
     id: 'g4',
     title: 'Hydra & Gold Facial Suite',
     category: 'spa',
-    image: '/src/assets/images/delaqua_facial_spa_1786530831961.jpg',
+    image: '/images/delaqua_facial_spa_1786530831961.jpg',
     description: 'Private relaxation facial room with clinical equipment and relaxing light therapy.'
   },
   {
@@ -381,7 +381,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g6',
     title: 'Bridal Makeover Studio',
     category: 'makeup',
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800',
+    image: '/images/delaqua_bridal_makeup_1786539106061.jpg',
     description: 'Exclusive private studio dedicated to Signature By Asma bridal looks.'
   }
 ];

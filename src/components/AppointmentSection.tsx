@@ -8,9 +8,18 @@ interface AppointmentSectionProps {
 
 export const AppointmentSection: React.FC<AppointmentSectionProps> = ({ onBookClick }) => {
   return (
-    <section className="py-20 relative overflow-hidden bg-gradient-to-r from-zinc-950 via-rose-950/40 to-zinc-950 border-t border-b border-rose-900/40">
-      {/* Background glow */}
-      <div className="absolute inset-0 bg-radial-at-c from-rose-600/10 to-transparent pointer-events-none" />
+    <section className="py-20 relative overflow-hidden bg-zinc-950 border-t border-b border-rose-900/40">
+      {/* Ambient Image Background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/delaqua_boutique_facade_1786532043184.jpg"
+          alt="DELAQUA Salon Ambience"
+          className="w-full h-full object-cover object-center opacity-20 scale-105"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/90 to-zinc-950" />
+        <div className="absolute inset-0 bg-radial-at-c from-rose-950/40 via-transparent to-zinc-950/80" />
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10 space-y-6">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-950 border border-rose-600/40 text-rose-300 text-xs font-bold uppercase tracking-widest shadow-xl">

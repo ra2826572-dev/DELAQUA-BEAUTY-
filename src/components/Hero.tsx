@@ -12,7 +12,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
       {/* Background Image with Dark & Rose Glow Gradients */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/delaqua_boutique_facade_1786532043184.jpg"
+          src="/images/delaqua_boutique_facade_1786532043184.jpg"
           alt="DELAQUA Beauty Salon Exterior"
           className="w-full h-full object-cover object-center scale-105 opacity-40 animate-pulse-subtle"
           referrerPolicy="no-referrer"

@@ -56,176 +56,202 @@ export const FeaturedDeals: React.FC<FeaturedDealsProps> = ({ onBookClick }) => 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {/* Hair Dye Deal Card */}
-            <div className="p-6 sm:p-8 rounded-2xl bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between space-y-6">
-              <div>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider text-rose-400 bg-rose-950 px-3 py-1 rounded-full border border-rose-800/50">
+            <div className="rounded-2xl overflow-hidden bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between group">
+              <div className="relative h-44 sm:h-48 overflow-hidden">
+                <img
+                  src="/images/delaqua_hair_dye_deal_1786539058569.jpg"
+                  alt="Single Process Hair Dye"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
+                <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-rose-300 bg-zinc-950/90 backdrop-blur-md px-3 py-1 rounded-full border border-rose-800/50 shadow-md">
                     Hair Color Special
                   </span>
-                  <span className="text-xs text-zinc-400">Includes Blow Dry</span>
-                </div>
-
-                <h4 className="font-serif font-bold text-2xl text-white mt-3">
-                  Single Process Hair Dye
-                </h4>
-                <p className="text-zinc-400 text-xs mt-1">
-                  Rich, vibrant single-tone global hair dye with nourishing shine gloss and professional blow dry.
-                </p>
-
-                {/* Length Selector */}
-                <div className="mt-6 space-y-2">
-                  <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
-                    Select Hair Length:
-                  </label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {HAIR_DYE_OPTIONS.map((opt, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => setHairDyeLength(idx)}
-                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                          hairDyeLength === idx
-                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                            : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:text-zinc-200'
-                        }`}
-                      >
-                        {opt.length}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Thickness Selector */}
-                <div className="mt-4 space-y-2">
-                  <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
-                    Select Hair Density:
-                  </label>
-                  <div className="grid grid-cols-2 gap-2">
-                    <button
-                      onClick={() => setHairDyeThickness('thin')}
-                      className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                        hairDyeThickness === 'thin'
-                          ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                          : 'bg-zinc-950 text-zinc-400 border-zinc-800'
-                      }`}
-                    >
-                      Thin Hair
-                    </button>
-                    <button
-                      onClick={() => setHairDyeThickness('thick')}
-                      className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                        hairDyeThickness === 'thick'
-                          ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                          : 'bg-zinc-950 text-zinc-400 border-zinc-800'
-                      }`}
-                    >
-                      Thick Hair
-                    </button>
-                  </div>
+                  <span className="text-xs text-zinc-200 bg-zinc-950/80 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-zinc-800">
+                    Includes Blow Dry
+                  </span>
                 </div>
               </div>
 
-              {/* Price & Booking Button */}
-              <div className="pt-4 border-t border-zinc-800 flex items-center justify-between">
+              <div className="p-6 sm:p-8 pt-4 space-y-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-[10px] uppercase text-zinc-400 font-medium">Selected Deal Price</p>
-                  <p className="font-serif font-bold text-3xl text-rose-400">
-                    {hairDyePrice}
+                  <h4 className="font-serif font-bold text-2xl text-white">
+                    Single Process Hair Dye
+                  </h4>
+                  <p className="text-zinc-400 text-xs mt-1">
+                    Rich, vibrant single-tone global hair dye with nourishing shine gloss and professional blow dry.
                   </p>
+
+                  {/* Length Selector */}
+                  <div className="mt-6 space-y-2">
+                    <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
+                      Select Hair Length:
+                    </label>
+                    <div className="grid grid-cols-3 gap-2">
+                      {HAIR_DYE_OPTIONS.map((opt, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setHairDyeLength(idx)}
+                          className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                            hairDyeLength === idx
+                              ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                              : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:text-zinc-200'
+                          }`}
+                        >
+                          {opt.length}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Thickness Selector */}
+                  <div className="mt-4 space-y-2">
+                    <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
+                      Select Hair Density:
+                    </label>
+                    <div className="grid grid-cols-2 gap-2">
+                      <button
+                        onClick={() => setHairDyeThickness('thin')}
+                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                          hairDyeThickness === 'thin'
+                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                            : 'bg-zinc-950 text-zinc-400 border-zinc-800'
+                        }`}
+                      >
+                        Thin Hair
+                      </button>
+                      <button
+                        onClick={() => setHairDyeThickness('thick')}
+                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                          hairDyeThickness === 'thick'
+                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                            : 'bg-zinc-950 text-zinc-400 border-zinc-800'
+                        }`}
+                      >
+                        Thick Hair
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <button
-                  onClick={() => onBookClick(`Single Process Hair Dye (${selectedHairDye.length} - ${hairDyeThickness})`)}
-                  className="bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg transition-all flex items-center gap-1.5 cursor-pointer"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Deal</span>
-                </button>
+
+                {/* Price & Booking Button */}
+                <div className="pt-4 border-t border-zinc-800 flex items-center justify-between">
+                  <div>
+                    <p className="text-[10px] uppercase text-zinc-400 font-medium">Selected Deal Price</p>
+                    <p className="font-serif font-bold text-3xl text-rose-400">
+                      {hairDyePrice}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => onBookClick(`Single Process Hair Dye (${selectedHairDye.length} - ${hairDyeThickness})`)}
+                    className="bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg transition-all flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    <span>Book Deal</span>
+                  </button>
+                </div>
               </div>
             </div>
 
             {/* Keratin Deal Card */}
-            <div className="p-6 sm:p-8 rounded-2xl bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between space-y-6">
-              <div>
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider text-rose-400 bg-rose-950 px-3 py-1 rounded-full border border-rose-800/50">
+            <div className="rounded-2xl overflow-hidden bg-zinc-900/90 border border-rose-900/40 hover:border-rose-500/50 transition-all shadow-xl flex flex-col justify-between group">
+              <div className="relative h-44 sm:h-48 overflow-hidden">
+                <img
+                  src="/images/delaqua_keratin_deal_1786539073271.jpg"
+                  alt="Keratin Treatment"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/40 to-transparent" />
+                <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-rose-300 bg-zinc-950/90 backdrop-blur-md px-3 py-1 rounded-full border border-rose-800/50 shadow-md">
                     Keratin Smoothing
                   </span>
-                  <span className="text-xs text-zinc-400">Silky & Frizz-Free</span>
-                </div>
-
-                <h4 className="font-serif font-bold text-2xl text-white mt-3">
-                  Keratin Treatment
-                </h4>
-                <p className="text-zinc-400 text-xs mt-1">
-                  Reconstructs damaged hair fiber, eliminates frizz, and adds long-lasting sleek shine.
-                </p>
-
-                {/* Length Selector */}
-                <div className="mt-6 space-y-2">
-                  <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
-                    Select Hair Length:
-                  </label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {KERATIN_OPTIONS.map((opt, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => setKeratinLength(idx)}
-                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                          keratinLength === idx
-                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                            : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:text-zinc-200'
-                        }`}
-                      >
-                        {opt.length}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Thickness Selector */}
-                <div className="mt-4 space-y-2">
-                  <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
-                    Select Hair Density:
-                  </label>
-                  <div className="grid grid-cols-2 gap-2">
-                    <button
-                      onClick={() => setKeratinThickness('thin')}
-                      className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                        keratinThickness === 'thin'
-                          ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                          : 'bg-zinc-950 text-zinc-400 border-zinc-800'
-                      }`}
-                    >
-                      Thin Hair
-                    </button>
-                    <button
-                      onClick={() => setKeratinThickness('thick')}
-                      className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
-                        keratinThickness === 'thick'
-                          ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
-                          : 'bg-zinc-950 text-zinc-400 border-zinc-800'
-                      }`}
-                    >
-                      Thick Hair
-                    </button>
-                  </div>
+                  <span className="text-xs text-zinc-200 bg-zinc-950/80 backdrop-blur-md px-2.5 py-0.5 rounded-full border border-zinc-800">
+                    Silky & Frizz-Free
+                  </span>
                 </div>
               </div>
 
-              {/* Price & Booking Button */}
-              <div className="pt-4 border-t border-zinc-800 flex items-center justify-between">
+              <div className="p-6 sm:p-8 pt-4 space-y-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <p className="text-[10px] uppercase text-zinc-400 font-medium">Selected Keratin Price</p>
-                  <p className="font-serif font-bold text-3xl text-rose-400">
-                    {keratinPrice}
+                  <h4 className="font-serif font-bold text-2xl text-white">
+                    Keratin Treatment
+                  </h4>
+                  <p className="text-zinc-400 text-xs mt-1">
+                    Reconstructs damaged hair fiber, eliminates frizz, and adds long-lasting sleek shine.
                   </p>
+
+                  {/* Length Selector */}
+                  <div className="mt-6 space-y-2">
+                    <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
+                      Select Hair Length:
+                    </label>
+                    <div className="grid grid-cols-3 gap-2">
+                      {KERATIN_OPTIONS.map((opt, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setKeratinLength(idx)}
+                          className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                            keratinLength === idx
+                              ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                              : 'bg-zinc-950 text-zinc-400 border-zinc-800 hover:text-zinc-200'
+                          }`}
+                        >
+                          {opt.length}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Thickness Selector */}
+                  <div className="mt-4 space-y-2">
+                    <label className="block text-xs font-semibold text-zinc-300 uppercase tracking-wider">
+                      Select Hair Density:
+                    </label>
+                    <div className="grid grid-cols-2 gap-2">
+                      <button
+                        onClick={() => setKeratinThickness('thin')}
+                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                          keratinThickness === 'thin'
+                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                            : 'bg-zinc-950 text-zinc-400 border-zinc-800'
+                        }`}
+                      >
+                        Thin Hair
+                      </button>
+                      <button
+                        onClick={() => setKeratinThickness('thick')}
+                        className={`py-2 px-3 text-xs font-medium rounded-lg border transition-all cursor-pointer ${
+                          keratinThickness === 'thick'
+                            ? 'bg-rose-950 text-rose-300 border-rose-500 font-semibold'
+                            : 'bg-zinc-950 text-zinc-400 border-zinc-800'
+                        }`}
+                      >
+                        Thick Hair
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <button
-                  onClick={() => onBookClick(`Keratin Treatment (${selectedKeratin.length} - ${keratinThickness})`)}
-                  className="bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg transition-all flex items-center gap-1.5 cursor-pointer"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Deal</span>
-                </button>
+
+                {/* Price & Booking Button */}
+                <div className="pt-4 border-t border-zinc-800 flex items-center justify-between">
+                  <div>
+                    <p className="text-[10px] uppercase text-zinc-400 font-medium">Selected Keratin Price</p>
+                    <p className="font-serif font-bold text-3xl text-rose-400">
+                      {keratinPrice}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => onBookClick(`Keratin Treatment (${selectedKeratin.length} - ${keratinThickness})`)}
+                    className="bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-medium text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg transition-all flex items-center gap-1.5 cursor-pointer"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    <span>Book Deal</span>
+                  </button>
+                </div>
               </div>
             </div>
 

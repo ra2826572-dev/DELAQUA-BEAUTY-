@@ -33,7 +33,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 space-y-4">
             <div className="relative rounded-2xl overflow-hidden border border-rose-900/40 shadow-2xl group">
               <img
-                src="/src/assets/images/delaqua_boutique_facade_1786532043184.jpg"
+                src="/images/delaqua_boutique_facade_1786532043184.jpg"
                 alt="DELAQUA Boutique Salon Exterior"
                 className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -58,7 +58,7 @@ export const About: React.FC = () => {
             <div className="grid grid-cols-3 gap-3">
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/src/assets/images/delaqua_asma_storefront_1786532062793.jpg"
+                  src="/images/delaqua_asma_storefront_1786532062793.jpg"
                   alt="DELAQUA BY ASMA Salon & Spa"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -68,7 +68,7 @@ export const About: React.FC = () => {
               </div>
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/src/assets/images/delaqua_nail_bar_1786530847103.jpg"
+                  src="/images/delaqua_nail_bar_1786530847103.jpg"
                   alt="DELAQUA Nail Bar"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -78,7 +78,7 @@ export const About: React.FC = () => {
               </div>
               <div className="rounded-xl overflow-hidden border border-zinc-800 shadow-md group relative">
                 <img
-                  src="/src/assets/images/delaqua_facial_spa_1786530831961.jpg"
+                  src="/images/delaqua_facial_spa_1786530831961.jpg"
                   alt="DELAQUA Facial Spa Room"
                   className="w-full h-32 sm:h-36 object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
